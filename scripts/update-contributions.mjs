@@ -175,12 +175,9 @@ function svgHeatmap(data, mobile = false) {
   const svgDays = bandLayouts.map((band, index) => {
     const yBase = top + index * (bandHeight + bandGap);
     const monthTexts = [];
-    let previousMonth = '';
     for (const cell of band.cells) {
-      const month = cell.day.date.slice(0, 7);
-      if (month !== previousMonth && cell.row < 4) {
+      if (cell.day.date.endsWith('-01')) {
         monthTexts.push(`<text x="${labelWidth + cell.col * step}" y="${yBase - 7}" class="month">${esc(monthLabel(cell.day.date))}</text>`);
-        previousMonth = month;
       }
     }
     const weekdayLabels = labels.map((label, row) => label ? `<text x="0" y="${yBase + row * step + daySize - 1}" class="weekday">${label}</text>` : '').join('');
