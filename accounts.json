@@ -1,0 +1,9 @@
+{
+  "accounts": [
+    { "login": "Sahil24-lab", "tokenEnv": "CONTRIB_TOKEN_LAB" },
+    { "login": "sahilh-tech", "tokenEnv": "CONTRIB_TOKEN_TECH" },
+    { "login": "sahil-arobotix", "tokenEnv": "CONTRIB_TOKEN_AROBOTIX" },
+    { "login": "sahil-actified", "tokenEnv": "CONTRIB_TOKEN_ACTIFIED" },
+    { "login": "sahil-modais", "tokenEnv": "CONTRIB_TOKEN_MODAIS" }
+  ]
+}
